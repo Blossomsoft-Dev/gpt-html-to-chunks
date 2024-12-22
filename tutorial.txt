@@ -1,0 +1,73 @@
+INSTALLATION GUIDE FOR HTML SPLITTING SCRIPT
+
+----------
+
+GOAL
+This script is designed to split a very large HTML file into smaller chunks. It requires XAMPP for setup and execution.
+
+----------
+
+IMPORTANT
+This script may not work if OpenAI changes the structure of its export files in the future.
+
+----------
+
+SETUP
+Move this current folder to XAMPP's htdocs Directory. Example:
+htdocs/html_to_chunks/
+
+----------
+
+EXPORT CHAT HISTORY
+In the ChatGPT platform, export your chat history. Unzip the files and place them in the source/ folder. Example:
+htdocs/html_to_chunks/source/ (Drag the files from the .rar archive there)
+
+If OpenAI hasn't changed their export scheme, you should see the following files in the folder:
+
+chat.html
+conversations.json
+message_feedback.json
+model_comparisons.json
+user.json
+
+----------
+
+VERIFY PRE-MADE FILES
+The dest/ folder already contains a pre-made style.css file for styling the output. Example:
+
+htdocs/html_to_chunks/dest/style.css
+
+----------
+
+START XAMPP
+Ensure XAMPP is running, with both Apache and MySQL services started.
+
+----------
+
+RUN THE SCRIPT
+Open a web browser and navigate to the script's execution file. Example:
+
+localhost/html_to_chunks/execute.php
+
+----------
+
+CHECK FOR RENDERED FILES
+The smaller html chunks should be in the destination folder. Example:
+htdocs/html_to_chunks/dest/foo.html
+
+Those are the new files you should keep and archive.
+
+----------
+
+OPTIONAL: USE STAGSI FOR TAGGING
+Install Stagsi and import the generated HTML files into the program. Stagsi's tagging feature will allow you to organize and label the files for quick access.
+
+www.stagsi.com/
+
+
+
+
+
+
+
+
